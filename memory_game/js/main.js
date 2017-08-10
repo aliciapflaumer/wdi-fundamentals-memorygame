@@ -46,8 +46,8 @@ var flipCard = function(cardId) {
 
 	cardsInPlay.push(cards[cardId].rank);
 
-	console.log(cards.cardImage);
-	console.log(cards.suit);
+	console.log(cards[cardId].cardImage);
+	console.log(cards[cardId].suit);
 
 if(cardsInPlay.length === 2) {
 	checkForMatch(0);
