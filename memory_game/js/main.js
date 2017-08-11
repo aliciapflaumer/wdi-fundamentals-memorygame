@@ -60,6 +60,7 @@ var flipCard = function() {
 };
 
 var createBoard = function() {
+	// add each card to the board
 	for (var i = 0; i < cards.length; i++) {
 		var cardElement = document.createElement('img');
 		cardElement.setAttribute('src', 'images/back.png');
