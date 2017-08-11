@@ -56,6 +56,7 @@ var flipCard = function() {
 	if(cardsInPlay.length === 2) {
 		checkForMatch(0);
 
+		cardsInPlay = [];
 	} 
 };
 
