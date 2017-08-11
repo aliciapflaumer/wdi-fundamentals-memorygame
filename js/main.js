@@ -34,7 +34,7 @@ var cardsInPlay = [];
 
 var checkForMatch = function() {
 	
-	if(cardsInPlay[0] === cardsInPlay[2]) {
+	if(cardsInPlay[0] === cardsInPlay[1]) {
 		alert("You found a match!");
 	} else {
 		alert("Sorry, try again.");
@@ -43,20 +43,18 @@ var checkForMatch = function() {
 
 var flipCard = function() {	
 	cardId = this.getAttribute('data-id');
-	console.log(cardId);
 
 	cardsInPlay.push(cards[cardId].rank);
 
-	console.log(cards[cardId].cardImage);
-	console.log(cards[cardId].suit);
+	// console.log(cards[cardId].cardImage);
+	// console.log(cards[cardId].suit);
 
 	this.setAttribute('src', cards[cardId].cardImage);
-	console.log(cards[cardId].cardImage);
+	// console.log(cards[cardId].cardImage);
 
 	if(cardsInPlay.length === 2) {
-		checkForMatch(0);
+		checkForMatch();
 
-		cardsInPlay = [];
 	} 
 };
 
